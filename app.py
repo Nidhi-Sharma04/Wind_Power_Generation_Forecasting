@@ -4,7 +4,7 @@ import pickle
 import base64
 
 # Load model and scaler
-with open("Wind_Power_Generation/windpower.sav", "rb") as f:
+with open("windpower.sav", "rb") as f:
     data = pickle.load(f)
     model = data["model"]
     scaler = data["scaler"]
