@@ -1,10 +1,8 @@
 streamlit
-pandas
 numpy
-scikit-learn==1.2.2
+pandas
+scikit-learn
+xgboost
 matplotlib
 seaborn
-xgboost
-pip>=25.1.1
 gdown
-
