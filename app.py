@@ -44,6 +44,7 @@ add_bg_from_local("background.jpg")
 st.title("⚡ Wind Power Generation Forecasting")
 
 # Google Drive file download
+# Updated direct file ID from your link: https://drive.google.com/file/d/1v8JTuZfPDn-N0sXfIPpoIRSA5lR82OG6/view
 file_id = "1v8JTuZfPDn-N0sXfIPpoIRSA5lR82OG6"
 output_path = "windpower.sav"
 
