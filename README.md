@@ -1,4 +1,6 @@
 # Wind Power Generation Forecasting
+#demo
+🎥 [Click here to watch the demo video](https://drive.google.com/file/d/1RoZXhMYmSghC-xrXeZBpAc6hj_XMjhXW/view?usp=drive_link)
 
 ## Overview
 This project focuses on forecasting wind power generation using machine learning techniques. Wind power generation is highly dependent on meteorological factors such as wind speed, temperature, and atmospheric pressure. By leveraging historical data, we aim to develop a predictive model that can estimate future power generation.
