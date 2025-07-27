@@ -2,6 +2,8 @@ import streamlit as st
 import pickle
 import numpy as np
 import base64
+import gdown
+import os
 
 st.set_page_config(page_title="🔋 Wind Power Forecasting", layout="centered")
 
@@ -41,8 +43,15 @@ add_bg_from_local("background.jpg")
 
 st.title("⚡ Wind Power Generation Forecasting")
 
+# Google Drive file download
+file_id = "1v8JTuZfPDn-N0sXfIPpoIRSA5lR82OG6"
+output_path = "windpower.sav"
+
+if not os.path.exists(output_path):
+    gdown.download(f"https://drive.google.com/uc?id={file_id}", output_path, quiet=False)
+
 # Load model and scaler
-with open("windpower.sav", "rb") as file:
+with open(output_path, "rb") as file:
     data = pickle.load(file)
 
 model = data['model']
@@ -87,6 +96,6 @@ if st.button("🚀 Predict Power Output"):
         f'<div class="prediction-box">⚡ Predicted Wind Power Output: <b>{prediction[0]:.2f} MW</b></div>',
         unsafe_allow_html=True
     )
+
 st.markdown("---")
 st.markdown("<center>🔧 Made with ❤️ by Nidhi Sharma | ⚡ Model Accuracy: 72% </center>", unsafe_allow_html=True)
-
