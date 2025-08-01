@@ -2,7 +2,6 @@ import streamlit as st
 import pickle
 import numpy as np
 import base64
-import gdown
 import os
 
 st.set_page_config(page_title="🔋 Wind Power Forecasting", layout="centered")
