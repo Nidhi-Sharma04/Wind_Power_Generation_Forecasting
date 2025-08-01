@@ -99,4 +99,4 @@ if st.button("🚀 Predict Power Output"):
     )
 
 st.markdown("---")
-st.markdown("<center>🔧 Made with ❤️ by Nidhi Sharma | ⚡ Model Accuracy: 72% </center>", unsafe_allow_html=True)
+st.markdown("<center>🔧 Made by Nidhi Sharma👩‍💻 |</center>", unsafe_allow_html=True)
